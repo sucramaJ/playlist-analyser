@@ -3,4 +3,5 @@ credentials.py
 *.swp
 .cache
 spotify
+venv
 __pycache__

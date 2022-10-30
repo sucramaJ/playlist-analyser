@@ -39,13 +39,13 @@ def list_songs(sp, playlist_id):
 
 if __name__ == "__main__":
     scope = 'user-library-read'
-    data_path = 'data\playlists.json'
+    data_path = 'data/playlists.json'
 
     sp_oauth = SpotifyOAuth(scope=scope, client_id=client_id, client_secret=client_secret, redirect_uri=redirect_uri)
     sp = spotipy.Spotify(auth_manager=sp_oauth)
-    playlists = get_data(sp, username, data_path)
-    playlist_id = playlists[0]['cunt']
-    print(f"{list(playlists[0].keys())[0]}:")
+    playlists = get_data(sp, username, data_path, update=True)
+    playlist_id = playlists[1]['cunt']
+    print(f"{list(playlists[1].keys())[0]}:")
     print(list_songs(sp, playlist_id))
 
     print("Succesful!")
