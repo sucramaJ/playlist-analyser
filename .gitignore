@@ -1,0 +1,6 @@
+data
+credentials.py
+*.swp
+.cache
+spotify
+__pycache__
