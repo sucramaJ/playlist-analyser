@@ -62,4 +62,5 @@ if __name__ == "__main__":
     #get_song_features(sp, ['1njYD38zSElj8PVnTy6G5e'])
     artists = get_featured_artists(sp, '00nlvJd1e6EGFc2dzssl9g')
     print(artists)
+
     print("Succesful!")
